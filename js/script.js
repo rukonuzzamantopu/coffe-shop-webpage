@@ -39,3 +39,52 @@ var swiper = new Swiper(".review-slider", {
         }
     },
 });
+
+// booking part
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const number = document.getElementById('number').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const formMessage = document.getElementById('formMessage');
+
+    // Reset previous message
+    formMessage.textContent = '';
+    formMessage.style.color = 'red';
+
+    // Validate Name (at least 2 characters)
+    if (name.length < 2) {
+        formMessage.textContent = 'Please enter a valid name (at least 2 characters).';
+        return;
+    }
+
+    // Validate Email (simple regex)
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        formMessage.textContent = 'Please enter a valid email address.';
+        return;
+    }
+
+ // Validate Number (digits only, 7 to 15 digits)
+    const numberPattern = /^\d{7,15}$/;
+    if (!numberPattern.test(number)) {
+        formMessage.textContent = 'Please enter a valid phone number (7-15 digits).';
+        return;
+    }
+
+
+
+    // Optional: Validate message length (if you want)
+    if (message.length > 500) {
+        formMessage.textContent = 'Message is too long (max 500 characters).';
+        return;
+    }
+
+    // If all validation passes
+    formMessage.style.color = 'green';
+    formMessage.textContent = 'Thank you! Your booking request has been received.';
+
+    // Or clear the form
+    this.reset();
+});

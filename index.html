@@ -225,18 +225,21 @@ Smooth espresso blended with creamy milk and a touch of caramel sweetness. Refre
         </div>
     </section>
 
-    <!-- BOOK -->
-    <section class="book" id="book">
-        <h1 class="heading">booking <span>reserve a table</span></h1>
+    <!-- BOOKing -->
+   <section class="book" id="book">
+    <h1 class="heading">booking <span>reserve a table</span></h1>
 
-        <form action="">
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="number" placeholder="Number" class="box">
-            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-        </form>
-    </section>
+    <form id="bookingForm" action="#">
+        <input type="text" id="name" name="name" placeholder="Name" class="box" required>
+        <input type="email" id="email" name="email" placeholder="Email" class="box" required>
+        <input type="number" id="number" name="number" placeholder="Number" class="box" required>
+        <textarea id="message" name="message" placeholder="Message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+    <div id="formMessage" role="alert" style="color:red; margin-top:10px;"></div>
+</section>
+
 
     <!--FOOTER  -->
     <section class="footer">
