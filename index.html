@@ -8,7 +8,7 @@
     <title>Coffee</title>
 
     <!-- SWIPER -->
-         <link rel="shortcut icon" href="image/menu-3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/menu-3.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- Font Awesome CDN Link  -->
@@ -21,8 +21,7 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
+   <header class="header">
         <div id="menu-btn" class="fas fa-bars"></div>
 
         <a href="#" class="logo">coffee <i class="fas fa-mug-hot"></i></a>
@@ -33,9 +32,10 @@
             <a href="#menu">menu</a>
             <a href="#review">review</a>
             <a href="#book">book</a>
+            <a href="myBooking.html">My Booking</a>
         </nav>
 
-        <a href="#" class="btn">book a table</a>
+        <a href="#book" class="btn">book a table</a>
     </header>
 
     <!-- HOME -->
@@ -233,9 +233,15 @@ Smooth espresso blended with creamy milk and a touch of caramel sweetness. Refre
         <input type="text" id="name" name="name" placeholder="Name" class="box" required>
         <input type="email" id="email" name="email" placeholder="Email" class="box" required>
         <input type="number" id="number" name="number" placeholder="Number" class="box" required>
+        <div style="display: grid;">
+        <input type="datetime-local" id="date" name="startDate" placeholder="Select time and Date" class="box" required>
+        <input type="datetime-local" id="date" name="endDate" placeholder="Select time and Date" class="box" required>
+
+        </div>
         <textarea id="message" name="message" placeholder="Message" class="box" cols="30" rows="10"></textarea>
         <input type="submit" value="send message" class="btn">
     </form>
+    
 
     <div id="formMessage" role="alert" style="color:red; margin-top:10px;"></div>
 </section>
