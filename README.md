@@ -6,7 +6,8 @@ Includes a **Shop** feature to showcase coffee products, along with Home, About,
 ---
 
 ## 🌐 Live Demo
-[Visit Website](https://your-live-demo-link.com](https://rukonuzzamantopu.github.io/coffe-shop-webpage/))
+[Visit Website](https://rukonuzzamantopu.github.io/coffe-shop-webpage/)
+
 
 ---
 
