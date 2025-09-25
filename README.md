@@ -23,5 +23,8 @@ Includes a **Shop** feature to showcase coffee products, along with Home, About,
 ### ℹ️ About Page
 <img width="1440" height="820" alt="3" src="https://github.com/user-attachments/assets/bf980673-6904-4ee5-97a0-a6675f6e48a7" />
 
+1. **Clone the repository**:
 
+   ```bash
+   https://github.com/rukonuzzamantopu/coffe-shop-webpage
 
